@@ -52,6 +52,18 @@ nav {
     cursor: pointer;
 }
 
+.lpleftbtn {
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+    width: 100px;
+}
+
+.lprightbtn {
+    padding: 5px 5px;
+    width: 100px;
+}
+
 .nav-btn:hover {
     background-color: orangered;
     color: white;
