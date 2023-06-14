@@ -80,7 +80,7 @@ nav {
 
 #landingpage {
     display: flex;
-    height: 65vh;
+    height: 600px;
 }
 
 .right img {
@@ -243,9 +243,22 @@ nav {
     justify-content: space-between;
 }
 /* Media queries */
+@media only screen and (min-width:1200px){
+    .icon {
+        left: 40%;
+        transform: translate(-60%, -50%);
+        font-size: 500px;
+    }
+}
+
 @media only screen and (max-width:1200px){
     #wrapper {
         width: 100%;
+    }
+    .icon {
+        left: 30%;
+        transform: translate(-50%, -50%);
+        font-size: 40vw;
     }
     /* img {
         max-width: 30%;
@@ -270,9 +283,23 @@ nav {
     }
 } */
 }
+@media only screen and (min-width:1100px){
+    #landingpage {
+        height: 70vh;
+    }
+    .right img {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width:900px){
     .ribbon a {
         font-size: 1.6vw;
+    }
+    .icon {
+        left: 35%;
+        transform: translate(-50%, -50%);
+        font-size: 50vw;
     }
 }
 @media only screen and (max-width:600px){
@@ -287,6 +314,7 @@ nav {
         justify-content: center;
         align-items: center;
         margin-top: 12%;
+        height: auto;
     }
     .left {
         top: 0;
@@ -300,11 +328,15 @@ nav {
     }
     .right img {
         position: relative;
+        bottom: 0;
+    }
+    .right {
+        bottom: -40px;
     }
     .icon {
         left: 50%;
-        transform: translate(-50%, -80%);
-        font-size: 60vw;
+        transform: translate(-54%, -70%);
+        font-size: 65vw;
     }
     .ribbon {
         transform: rotate(0deg) translateY(0px);
