@@ -242,6 +242,31 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
+#about {
+    padding-top: 100px;
+}
+
+#about h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#aboutleft img {
+    flex: 1;
+    left: 8%;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
 /* Media queries */
 @media only screen and (min-width:1200px){
     .icon {
