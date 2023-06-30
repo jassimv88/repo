@@ -10,7 +10,7 @@ body {
     font-family: 'Archivo Black', sans-serif;
 }
 
-#wrapper {
+.wrapper {
     display: flex;
     flex-direction: column;
     width: 1200px;
@@ -250,6 +250,7 @@ nav {
 
 #about {
     display: flex;
+    gap: 15px;
 }
 
 h2 {
@@ -258,7 +259,6 @@ h2 {
 }
 
 #aboutleft {
-    padding-left: 5%;
     flex: 1;
     position: relative;
     max-width: 50%;
@@ -281,7 +281,7 @@ h2 {
 
 .aboutboxes {
     display: flex;
-    margin-left: 5px;
+    gap: 5px;
 }
 /* #aboutright {
     border: solid red;
@@ -298,9 +298,12 @@ h2 {
         padding: 0.75rem 0.5rem; */
         border-radius: .75rem;
         padding: .75rem .5rem;
-        background-color: gray;
+        background-color: orangered;
         width: 150px;
         margin: 0px 5px 5px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 
 #abouticon, .aboutsubtitle, .abouttitle {
@@ -311,6 +314,10 @@ p {
     margin-left: 30px;
     margin-top: 50px;
     font-size: 25px;
+}
+
+#abouticon {
+    font-size: 30px;
 }
 
 
@@ -336,6 +343,11 @@ p {
         left: 30%;
         transform: translate(-50%, -50%);
         font-size: 40vw;
+    }
+
+    #about {
+        flex-direction: column;
+        align-items: center;
     }
     /* img {
         max-width: 30%;
